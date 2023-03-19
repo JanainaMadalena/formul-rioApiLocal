@@ -1,0 +1,94 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(192, 113, 207), rgb(71, 17, 59));
+    font-weight: bold
+}
+.borda{
+    color: rgb(42, 23, 150);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+fieldset{
+    border: 3px solid rgba(51, 8, 45, 0.521);
+}
+legend{
+    border: 1px solid rgba(51, 8, 45, 0.521);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(198, 86, 223, 0.185);
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(152, 13, 245);
+    outline: none;
+    color: rgb(152, 13, 245);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(156, 34, 238);
+}
+#submit{
+    margin-right: auto;
+    background-image: linear-gradient(to right,rgb(152, 17, 179), rgb(71, 17, 59));
+    width: 25%;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 77%;
+    top: 100%;
+    
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(151, 62, 168), rgb(230, 55, 192));
+}
+#reset{
+    background-image: linear-gradient(to right,rgb(152, 17, 179), rgb(71, 17, 59));
+    width: 25%;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 77%;
+    
+   
+    
+}
+
+#tipoCliente {
+    background-image: linear-gradient(to right,rgb(163, 54, 226), rgb(82, 12, 82));
+    color:black;
+    width: 40%;
+    padding: 5px;
+    font-size: 15px;
+    border: 20px;
+    cursor: pointer ;
+  }
+  

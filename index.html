@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+<head>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+  
+  
+  <link rel="stylesheet" href="index.css">
+  <title>Curso de QA - Prodigyan</title>
+  </head>
+<body onload="tipos()">
+    <div class="borda">
+    <form action="">
+      <fieldset>
+        <legend><b>Fórmulário</b></legend>
+            <br>
+            <div class="inputBox">
+            <label for="ID" >ID:</label>
+            <input type="text" class="inputUser" id="ID" placeholder="ID">
+        </div>
+         <div class="inputBox">
+            <label for="nome">Nome:</label>
+            <input type="text" class="inputUser" id="nome" placeholder="nome">
+        </div>
+        <div class="inputBox">
+          <label for="telefone">Telefone:</label>
+          <input type="text" class="inputUser" id="telefone" placeholder="telefone">
+      </div>
+         <div class="inputBox">
+            <label for="email">E-mail:</label>
+            <input type="email" class="inputUser" id="email" placeholder="nome@exemplo.com">
+            <br>
+            <button type="button" id="submit" class="botao" onclick="consultar()">Consultar</button>
+            <br><br>
+        </div>
+        <div class="inputBox">
+          <label for="cep">CEP:</label>
+          <input nome= "cep" type="text" class="inputUser" id="cep" placeholder="CEP">
+          <br>
+          <button type="button" id="submit" class="botao" onclick="buscar()">Buscar</button>
+      </div>
+        <div class="inputBox">
+          <label for="logradouro">Endereço:</label>
+          <input nome="logradouro" type="text" class="inputUser" id="logradouro" placeholder="Endereço">
+      </div>
+       <div class="inputBox">
+          <label for="numero">Número:</label>
+          <input type="text" class="inputUser" id="numero" placeholder="número">
+      </div>
+       <div class="inputBox">
+          <label for="complemento">Complemento:</label>
+          <input nome="complemento" type="text" class="inputUser" id="complemento" placeholder="Complemento">
+      </div>
+       <div class="inputBox">
+          <label for="bairro">Bairro:</label>
+          <input nome="bairro" type="text" class="inputUser" id="bairro" placeholder="Bairro">
+      </div>
+       <div class="inputBox">
+          <label for="localidade">Cidade:</label>
+          <input nome="localidade" type="text" class="inputUser" id="localidade" placeholder="Cidade">
+      </div>
+       <div class="inputBox">
+          <label for="uf">Estado:</label>
+          <input nome="uf" type="text" class="inputUser" id="uf" placeholder="estado">
+      </div>
+      <br>
+      <div class="dropdown" >
+        <label for="cliente">Tipo cliente:</label>
+        <select name="cliente" id="tipoCliente">
+        <option selected disable value="">Selecione</option>
+        <option id = "tipo1" value="1"></option>
+        <option id = "tipo2" value="2"></option>
+        <option id = "tipo3" value="3"></option>
+      </select>
+      </div>
+     <button type="button" id="submit" class="botao" onclick="cadastra()">Enviar</button>
+  </fieldset>
+</form>
+</div>
+     <script src="main.js"></script>
+     <script src="viacep.js"></script>
+</body>
+</html>
